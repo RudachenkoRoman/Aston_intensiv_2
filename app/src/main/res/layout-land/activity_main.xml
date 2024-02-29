@@ -11,25 +11,25 @@
         android:id="@+id/buttonRotate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|center"
-        android:layout_marginTop="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="165dp"
         android:text="@string/rotate" />
 
     <com.rudachenkoroman.aston_intensiv_2.custom_view.CustomCircleView
         android:id="@+id/circleView"
         android:layout_width="230dp"
         android:layout_height="230dp"
-        android:layout_gravity="top|center"
-        android:layout_marginTop="100dp"
+        android:layout_gravity="end|center"
+        android:layout_marginEnd="100dp"
         />
 
     <androidx.appcompat.widget.AppCompatSeekBar
         android:id="@+id/seekBar"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|end"
+        android:layout_gravity="end|center"
         android:layout_marginEnd="-60dp"
-        android:layout_marginTop="205dp"
         android:progressBackgroundTint="@color/black"
         android:progressTint="@color/black"
         android:thumbTint="@color/black"
@@ -53,16 +53,17 @@
         android:id="@+id/downloadImage"
         android:layout_width="250dp"
         android:layout_height="140dp"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="140dp"
+        android:visibility="invisible"
+        android:layout_gravity="start|center"
+        android:layout_marginStart="80dp"
         />
 
     <com.rudachenkoroman.aston_intensiv_2.custom_view.CustomTextView
         android:id="@+id/customText"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
         android:layout_height="70dp"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="175dp"
+        android:layout_gravity="start|center"
         android:gravity="center"
         />
 
@@ -70,8 +71,9 @@
         android:id="@+id/buttonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="165dp"
         android:text="@string/reset" />
 
 </FrameLayout>
